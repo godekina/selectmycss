@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>CSS Selector:Cheatsheet</title>
+</head>
+<h2>CSS Selectors & Specificity</h2>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th >Selector Name</th>
+                <th scope="row">Description</th>
+                <th scope="row">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Type Selector (A)</td>
+                <td>Selects elements of type A</td>
+                <td>div, p, and h1 are element types that can be selected</td>
+            </tr>
+            <tr>
+                <td>ID Selector (#id)</td>
+                <td>Selects elements of type #id.</td>
+                <td>#header, #first-text, and #code are id types that can be selected.</td>
+            </tr>
+            <tr>
+                <td>Descendant Selector (A B)</td>
+                <td>Selects all B elements inside A.</td>
+                <td>div p , selects all p tags in divs.</td>
+            </tr>
+            <tr>
+                <td>Combine descendant & id Selector (#header A)</td>
+                <td>Selects all B elements inside A.</td>
+                <td>div p , selects all p tags in divs.</td>
+            </tr>
+            <tr>
+                <td>Class Selector (.button)</td>
+                <td>Selects all elements with the class attribute.</td>
+                <td>div p , selects all p tags in divs.</td>
+            </tr>
+            <tr>
+                <td>Combine Class Selector (A.button)</td>
+                <td>Selects all A elements with button class.</td>
+                <td>#big.post , selects all element with id of big thaat also have a class of post.</td>
+            </tr>
+            <tr>
+                <td>Comma Combinator (A, B)</td>
+                <td>Selects all A and B elements.</td>
+                <td>div, p , selects all p's divs.</td>
+            </tr>
+            <tr>
+                <td>Universal Selector (*)</td>
+                <td>Selects all elements.</td>
+                <td>* , selects all elements and styles them accordingly.</td>
+            </tr>
+            <tr>
+                <td>Combine Universal Selector (A *)</td>
+                <td>Selects all elements inside A.</td>
+                <td> p *, selects all elements in all p tags.</td>
+            </tr>
+            <tr>
+                <td>Adjacent Siblings (A + B)</td>
+                <td>Selects all B elements directly following A, <br>
+                    elements that are on the same block are regarded as siblings.</td>
+                <td> p + div selects all p tags that are direct siblings of div.</td>
+            </tr>
+            <tr>
+                <td>General Siblings (A ~ B)</td>
+                <td>Selects all B elements that follow A, the difference between<br> 
+                    this and Adjacent sibblings is that Adjacent siblings select<br> only one sibbling that follows it directly. </td>
+                <td> div ~ p, selects all p elements that are siblings of divs.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
